@@ -62,7 +62,7 @@ public class Coloretto {
       			do {
       				System.out.print("Welke Stapel pak je?");
       				stapelen = invoer.nextInt();
-      			}while(invoer > Stapels.length());               // STAPELS.LENGTH --> van stapels een geldige arary maken zodat ik de lengte kan pakken.
+      			}while(invoer > Stapels.length());               // STAPELS.LENGTH --> van stapels een geldige array maken zodat ik de lengte kan pakken.
       			
       			
       			
