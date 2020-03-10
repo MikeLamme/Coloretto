@@ -18,12 +18,12 @@ public class Coloretto {
         String naam = null;
 		int spelers;
 		int teller = 0;
-		int stappelen = 0;
+		int stapelen = 0;
 		int keuze = 0;
 		int keuzeStapel=0;
 		
 		Kaart kaarten = new Kaart(naam);
-		Gameboard Stapels = new Gameboard(naam, stappelen, teller);		
+		Gameboard Stapels = new Gameboard(naam, stapelen, teller);		
 		Scanner invoer = new Scanner (System.in);
 		String[] kaart = {"oranje","blauw","rood","geel","Grijs","Groen","Roos"};
 
@@ -56,47 +56,47 @@ public class Coloretto {
       				System.out.printf("de stapel is %s", keuzeStapel);
       				}
       				else {
-      				System.out.print("welke Stapel pak je?");
-      				stappelen = invoer.nextInt();
-      				stappelen = Stapels.trekKaartEnLegAf();
-      				if (stappelen == kaarten.specialeKaart())
+      				System.out.print("Welke Stapel pak je?");
+      				stapelen = invoer.nextInt();
+      				stapelen = Stapels.trekKaartEnLegAf();
+      				if (stapelen == kaarten.specialeKaart())
       				{
       					if(kaarten.specialeKaart()==1)
       					{
-      						System.out.println("You got a plus 2");
+      						System.out.println("Je krijgt een +2");
       						kaarten.specialeKaart();
       					}
       					else if(kaarten.specialeKaart()==2)
       					{
-      						System.out.println("You got a joker");
+      						System.out.println("Je krijgt een Joker");
       						kaarten.specialeKaart();
       					}
       					else
           				{
-          					System.out.println("The last round has Started");
+          					System.out.println("Dit is een speciale kaart, de laaste ronde begint nu!");
           					kaarten.specialeKaart();
           				}
       				}
       				
-      				if (stappelen == 1)
+      				if (stapelen == 1)
       				{
-      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stappelen);
+      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stapelen);
       				}
-      				else if(stappelen == 2)
+      				else if(stapelen == 2)
       				{
-      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stappelen);
+      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stapelen);
       				}
-      				else if(stappelen == 3)
+      				else if(stapelen == 3)
       				{
-      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stappelen);
+      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stapelen);
       				}
-      				else if (stappelen == 4)
+      				else if (stapelen == 4)
       				{
-      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stappelen);
+      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stapelen);
       				}
       				else
       				{
-      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stappelen);
+      					System.out.printf("%s krijgt %s kaarten %n",namen[i],stapelen);
       				}
       				}
       				

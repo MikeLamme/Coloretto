@@ -25,7 +25,6 @@ public class Kaart
 		this.kleur = kleur;
 	}
 
-
 	public String getSoort() {
 		return soort;
 	}
@@ -37,7 +36,7 @@ public class Kaart
 	{
 		String[] kaart = {"oranje","blauw","rood","geel","Grijs","Groen","Roos"};
 		Random kl = new Random();
-		int randomKleur=kl.nextInt(kaart.length);
+		int randomKleur = kl.nextInt(kaart.length);
 		String.format("De kleur is %s",kaart[randomKleur]);
 		return kleur;
 	}

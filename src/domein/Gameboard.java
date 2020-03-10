@@ -54,17 +54,17 @@ public class Gameboard
 			{
 				stapel3 = stapel3 + 1;
 				return stapel3;
-			}else if (stapel1 == 3 && stapel2 == 3 &&stapel3 == 3)
+			}else if (stapel1 == 3 && stapel2 == 3 && stapel3 == 3)
 			{
 				stapel4 = stapel4 + 1;
 				return stapel4;
-			}else if (stapel1 == 3 && stapel2 == 3 &&stapel3 == 3&&stapel4 == 3)
+			}else if (stapel1 == 3 && stapel2 == 3 && stapel3 == 3 && stapel4 == 3)
 			{
 				stapel5 = stapel5 + 1;
 				return stapel5;
 			}else
 			{
-				throw new IllegalArgumentException("De stapels liggen vol pak een Stapel");
+				throw new IllegalArgumentException("De stapels liggen vol, pak een Stapel");
 			}
 			
 		}
@@ -82,21 +82,21 @@ public class Gameboard
 		{
 			return stapel2;
 		}
-		else if(stapel1 == 3&&stapel2 == 3)
+		else if(stapel1 == 3 && stapel2 == 3)
 		{
 			return stapel3;
 		}
-		else if (stapel1 == 3&&stapel2 == 3&&stapel3==3)
+		else if (stapel1 == 3 && stapel2 == 3 && stapel3==3)
 		{
 			return stapel4;
 		}
-		else if (stapel1 == 3&&stapel2 == 3&&stapel3 == 3&&stapel4 == 3)
+		else if (stapel1 == 3 && stapel2 == 3 && stapel3 == 3 && stapel4 == 3)
 		{
 			return stapel5;
 		}
 		else
 		{
-			throw new IllegalArgumentException("De stapels liggen vol pak een Stapel");
+			throw new IllegalArgumentException("De stapels liggen vol, pak een Stapel");
 		}
 	}
 }
