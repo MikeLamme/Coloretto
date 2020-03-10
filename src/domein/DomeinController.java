@@ -14,6 +14,6 @@ public class DomeinController
 		
 	}
 	public List<Kaart> geefKleuren(){
-		return deKleur.geefKleuren();
+		return deKleur.geefkleuren();
 	}
 }

@@ -7,7 +7,7 @@ import domein.Kaart;
 
 public class ColorettoMapper 
 {
-	public List<Kaart> geefKleuren()
+	public List<Kaart> geefkleuren()
 	{
 		List<Kaart> lijst = new ArrayList<>();
 		

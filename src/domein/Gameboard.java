@@ -1,5 +1,8 @@
 package domein;
 
+import java.util.Scanner;
+import domein.Stapels;
+
 public class Gameboard
 {
 	private String kaart;
@@ -12,6 +15,8 @@ public class Gameboard
 	int keuze;
 	
 	private Gameboard[] Deck = new Gameboard[63];
+	private Stapels[] Stapels = new Stapels[5];
+
 	
 	public Gameboard(String kaart,int totaalAantalKaarten,int Deck)
 	{
@@ -22,6 +27,7 @@ public class Gameboard
 		
 		int[] Stapels = {stapel1,stapel2,stapel3,stapel4,stapel5};				// Zie COLORETTO.JAVA, STAPELS MOET EEN GELDIGE ARRAY WORDEN VOOR ARRAY.LENGTH (STAPELS.LENGTH)
 		String[] kaart = {"oranje","blauw","rood","geel","Grijs","Groen","Roos"};
+		
 		
 		for (int count = 0; count < Deck.length; count++) 
 		{
