@@ -20,7 +20,7 @@ public class Gameboard
 	}
 	public void DeckOfards() {
 		
-		int[] Stapels = {stapel1,stapel2,stapel3,stapel4,stapel5};
+		int[] Stapels = {stapel1,stapel2,stapel3,stapel4,stapel5};				// Zie COLORETTO.JAVA, STAPELS MOET EEN GELDIGE ARRAY WORDEN VOOR ARRAY.LENGTH (STAPELS.LENGTH)
 		String[] kaart = {"oranje","blauw","rood","geel","Grijs","Groen","Roos"};
 		
 		for (int count = 0; count < Deck.length; count++) 
@@ -31,7 +31,7 @@ public class Gameboard
 	public int maakEenKeuze()
 	{
 		do {
-			System.out.print("Welke keuze pak je 1:Kaart leggen op Stapel of 2: pak Stapel");
+			System.out.print("Welke keuze pak je 1: Kaart leggen op stapel OF 2: pak Stapel");
 			
 			return keuze;
 		}while(Stapels()>Speler.idNummer);
@@ -39,7 +39,7 @@ public class Gameboard
 	
 	public int trekKaartEnLegAf()
 	{
-		for (totaalAantalKaarten = 0; totaalAantalKaarten < 1; totaalAantalKaarten=totaalAantalKaarten+1)
+		for (totaalAantalKaarten = 0; totaalAantalKaarten < 1; totaalAantalKaarten+=1)
 		{
 			totaalAantalKaarten--;
 			if (stapel1 < 3)

@@ -56,8 +56,16 @@ public class Coloretto {
       				System.out.printf("de stapel is %s", keuzeStapel);
       				}
       				else {
+      					
+      					
+      					
+      			do {
       				System.out.print("Welke Stapel pak je?");
       				stapelen = invoer.nextInt();
+      			}while(invoer > Stapels.length());               // STAPELS.LENGTH --> van stapels een geldige arary maken zodat ik de lengte kan pakken.
+      			
+      			
+      			
       				stapelen = Stapels.trekKaartEnLegAf();
       				if (stapelen == kaarten.specialeKaart())
       				{

@@ -32,14 +32,7 @@ public class Kaart
 	public void setSoort(String soort) {
 		this.soort = soort;
 	}
-	public String kleuren(String kleur)
-	{
-		String[] kaart = {"oranje","blauw","rood","geel","Grijs","Groen","Roos"};
-		Random kl = new Random();
-		int randomKleur = kl.nextInt(kaart.length);
-		String.format("De kleur is %s",kaart[randomKleur]);
-		return kleur;
-	}
+
 	public double specialeKaart()
 	{
 		specialeKaart = 1+(random.nextInt(3));
